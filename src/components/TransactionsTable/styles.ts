@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-
 export const Container = styled.div`
-
   margin-top: 4rem;
 
   table {
@@ -24,19 +22,17 @@ export const Container = styled.div`
       background-color: var(--shape);
       color: var(--text-body);
 
-     &:first-child {
-      color: var(--text-title);
-     }
+      &:first-child {
+        color: var(--text-title);
+      }
 
-     &.deposit {
-      color: var(--green);
-     }
+      &.deposit {
+        color: var(--green);
+      }
 
-     &.withdraw {
-      color: var(--red);
-     }
+      &.withdraw {
+        color: var(--red);
+      }
     }
-
   }
-
 `;

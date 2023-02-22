@@ -1,14 +1,11 @@
-import income from '../../assets/income.svg';
-import outcome from '../../assets/outcome.svg'
-import total from '../../assets/total.svg';
-import {Container} from './styles';
+import income from "../../assets/income.svg";
+import outcome from "../../assets/outcome.svg";
+import total from "../../assets/total.svg";
+import { Container } from "./styles";
 
-export function Summary()
-{
-
+export function Summary() {
   return (
-
-   <Container>
+    <Container>
       <div>
         <header>
           <p>Entradas</p>
@@ -24,17 +21,14 @@ export function Summary()
         </header>
         <strong>-R$500,00</strong>
       </div>
-      
-      <div className='highligth-background'>
+
+      <div className="highligth-background">
         <header>
           <p>Total</p>
           <img src={total} alt="total" />
         </header>
         <strong>R$5000,00</strong>
       </div>
-   </Container>
-
+    </Container>
   );
-
-
 }

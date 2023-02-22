@@ -8,7 +8,7 @@ export function Dashboard()
   return (
 
     <Container>
-      <Summary/> 
+      <Summary/>
       <TransactionTable />
     </Container>
 
