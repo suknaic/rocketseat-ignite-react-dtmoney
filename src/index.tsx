@@ -23,7 +23,7 @@ createServer(
           },
           {
             id: 2,
-            title: 'Aluguel',
+            title: 'Compras',
             type: 'withdraw',
             category: 'Casa',
             amount: 300,
@@ -41,7 +41,7 @@ createServer(
 
       this.post('/transactions', (schema, request) => {
         const data = JSON.parse(request.requestBody)
-        return schema.create('transaction', data);
+        return schema.create('transaction', {...data, createdAt: new Date()});
       })
     }
   }
